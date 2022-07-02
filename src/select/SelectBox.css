@@ -1,0 +1,225 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 100px;
+    margin: 0;
+    background-color: #ebf3f3;
+}
+
+
+
+#info {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    color: #2d3667;
+    font-size: 16px;
+    text-align: center;
+    padding: 14px;
+    background-color: #f3f9f9;
+}
+
+#app-cover {
+    position: absolute;
+    top: 0;
+    right: 93px;
+
+    width: 300px;
+    height: 42px;
+    margin: 62px auto 0 auto;
+}
+
+#select-button {
+    position: relative;
+    height: 16px;
+    padding: 12px 14px;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#options-view-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 3;
+}
+
+#selected-value {
+    font-size: 16px;
+    line-height: 1;
+    margin-right: 26px;
+}
+
+.option i {
+    width: 16px;
+    height: 16px;
+}
+
+.option,
+.label {
+    color: #2d3667;
+    font-size: 16px;
+}
+
+
+
+.options {
+    position: absolute;
+    left: 0;
+    width: 250px;
+    height: 50vh;
+    background: red;
+}
+
+#options {
+    position: absolute;
+    height: 50vh;
+    top: 42px;
+    right: 0;
+    left: 0;
+    width: 298px;
+    overflow: hidden;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 4px;
+
+
+}
+
+.options2 {
+    overflow-y: scroll;
+    width: 34vw;
+    height: 100%;
+
+}
+
+#options-view-button:checked~#options {
+    border: 1px solid #e2eded;
+    border-color: #eaf1f1 #e4eded #dbe7e7 #e4eded;
+}
+
+.option {
+    position: relative;
+    line-height: 1;
+    transition: 0.3s ease all;
+    z-index: 2;
+
+}
+
+
+
+
+
+.label {
+    display: none;
+    padding: 0;
+    margin-left: 4px;
+}
+
+#options-view-button:checked~#options .label {
+    display: block;
+    padding: 12px 14px;
+}
+
+.s-c {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 50%;
+}
+
+.s-c.top {
+    top: 0;
+    height: 100%;
+}
+
+
+input[type="radio"] {
+    position: absolute;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+
+
+
+.label {
+    transition: 0.3s ease all;
+}
+
+
+
+
+.option input[type="radio"]:checked~.label:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#options-view-button:not(:checked)~#options .option input[type="radio"]:checked~.opt-val {
+    top: -30px;
+}
+
+
+.option:nth-child(odd) input[type="radio"]:checked~.label:before {
+    background-color: #ea4c89;
+}
+
+
+.option:nth-child(even) input[type="radio"]:checked~.label:before {
+    background-color: #0057ff;
+}
+
+
+.option:hover .label {
+    color: rgb(216, 189, 189);
+}
+
+.coinDetail {
+    list-style: none;
+
+}
+
+.coine {
+
+
+
+    position: relative;
+    width: 40vw;
+    height: 45vh;
+    padding: 10px 10px;
+    margin: 20px;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    background-color: #143240;
+
+    border-radius: 4px;
+    box-shadow: 0 10px 20px -5px rgba(20, 50, 64, 0.76);
+    overflow: hidden;
+
+}
+
+.coines {
+    height: 100%;
+    width: 44vw;
+    overflow-y: scroll;
+}
